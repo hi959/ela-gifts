@@ -39,8 +39,6 @@ body, html {
 
 nav {
 	background-color: #e3e5e6;
-	position: sticky!important;
-	top: 0;
 	direction: rtl;
 }
 
