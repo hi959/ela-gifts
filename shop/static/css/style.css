@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap');
+
+@font-face {
+  font-family: anka;
+  src: url(../fonts/anka/ankaclm-bold-webfont.woff);
+}
+
+a {
+	font-family: 'Rubik', sans-serif;
+}
+
+body, html {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	direction: rtl;
+}
+
+.header-bg {
+	/* The image used */
+  	background-image: url(../header/5017c21f-a3a1-4715-8c97-501e23fc33bf.jpg);
+
+  /* Full height */
+  	height: 50%; 
+
+  /* Center and scale the image nicely */
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+nav {
+	background-color: #F8C471;
+	position: sticky!important;
+	top: 0;
+	direction: rtl;
+}
+
+nav a {
+	text-align: right!important;
+}
+
+nav li:hover ul {
+	display: block;
+	position: relative;
+	top: 100%;
+    left: 0;
+    margin-top: .125rem;
+}
+
+.about-pc {
+	width: 100%;
+	height: 100vh;
+	background-color: #EAE7DE;
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.about-block {
+	display: flex;
+	height: 100%;
+	width: 65%;
+	justify-content: center;
+}
+
+.about-top {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 5%;
+}
+
+.about-text {
+	margin-right: 6%;
+	width: 50%;
+}
+
+.about-title h1 {
+	color: #B7950B;
+	font-family: anka, sans-serif;
+	font-size: 3vw;
+}
+
+.about-sec-title em h4 {
+	font-size: 1.7vw;
+    border-bottom: 2px dotted black;
+    width: fit-content;
+}
+
+.about-article {
+	font-size: 1.06vw;
+	line-height: 1.6;
+}
+
+.about-img {
+	text-align: left;
+	width: 50%;
+}
+
+.about-img img {
+	width: 100%;
+	object-fit: cover;
+}
