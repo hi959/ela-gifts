@@ -42,8 +42,8 @@ nav {
 	direction: rtl;
 }
 
-nav a {
-	text-align: right!important;
+.nav-item {
+	border-left: 1px solid black;
 }
 
 .about-pc {
@@ -77,7 +77,7 @@ nav a {
 
 .about-title h1 {
 	color: #99c0ff;
-	font-family: anka, sans-serif;
+	/*font-family: anka, sans-serif;*/
 	font-size: 3vw;
 }
 
@@ -103,12 +103,46 @@ nav a {
 }
 
 .search-width {
-	width: 28.4vw;
+	width: 40vw;
+}
+
+@media (max-width: 1299px) {
+	.search-width {
+		width: 32vw;
+	}
+}
+
+@media (max-width: 1146px) {
+	.search-width {
+		width: 25vw;
+	}
+}
+
+@media (max-width: 1039px) {
+	.search-width {
+		width: 24vw;
+	}
+}
+
+@media (max-width: 1025px) {
+	.search-width {
+		width: 22vw;
+	}
+}
+
+@media (max-width: 999px) {
+	.search-width {
+		width: 21vw;
+	}
 }
 
 @media (max-width: 991px) {
 	.search-width {
 		width: 100%;
+	}
+
+	.about-pc {
+		height: fit-content;
 	}
 
 	.about-text {
