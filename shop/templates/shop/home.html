@@ -3,6 +3,8 @@
 
 {% block body %}
 
+	{% include 'shop/navbar.html' %}
+	
 	<div class="header-bg">
 		
 		{% load static %}
@@ -10,8 +12,7 @@
 
 	</div>
 
-    {% include 'shop/navbar.html' %}
-	
+    
 	<div class="about-pc">
 
 		<div class="about-block">
@@ -61,6 +62,8 @@
 
 							עם E.L.A Gifts כל אירוע שלכם יהפוך ליותר שמח😊
 
+
+
 						</p>
 				
 					</div>
@@ -74,6 +77,10 @@
 
 	</div>
 
+
+	{% for product in products_list %}
+		{{ product }}
+	{% endfor %}
 
 {% endblock %}
 
