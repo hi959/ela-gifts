@@ -77,8 +77,27 @@
 
 	</div>
 
+	{% for i in products_list %}
 
-	{{ products_list }}
+		<p>
+			{{ i.name }}
+		</p>
+
+
+		{{ i.description }}
+		
+		<p>
+			{{ i.price }}
+		</p>
+
+		<p>
+			{{ i.count }}
+		</p>
+
+		<div class="product_img">
+			<img src="{{ i.image.url }}">
+		</div>
+	{% endfor %}
 
 {% endblock %}
 
