@@ -86,29 +86,30 @@
 				<h3 class="fire-products-title">המוצרים החמים!!!</h3>
 
 				<div class="all-products">
-					{% for i in products_list %}
 
-					<div class="product">
+					{% for i in hot_products %}
 
-						<img src="{{ i.image.url }}" class="product-img">
+						<div class="product">
 
-						<div class="product-bottom">
+							<img src="{{ i.image.url }}" class="product-img">
 
-							<div class="product-name">
-								<h3>{{ i.name }}</h3>
-							</div>
+							<div class="product-bottom">
 
+								<div class="product-name">
+									<h3>{{ i.name }}</h3>
+								</div>
 
-							<div class="product-price">
-								<span class="product-currensy">&#8362;</span>
-								<span class="product-price-value">{{ i.price }}  </span>
+								<div class="product-price">
+									<span class="product-currensy">&#8362;</span>
+									<span class="product-price-value">{{ i.price }}  </span>
+								</div>
+
 							</div>
 
 						</div>
 
-					</div>
-
 					{% endfor %}
+
 
 				</div>
 

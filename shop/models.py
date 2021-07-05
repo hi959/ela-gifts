@@ -14,9 +14,10 @@ class Product(models.Model):
 	description = models.TextField("תיאור המוצר", blank=True)
 	image = models.ImageField('תמונת המוצר',upload_to="product_images/")
 	count = models.PositiveIntegerField('כמות המוצר')
-	tapStatus = models.BooleanField('לעשות מבצע ?', default=False)
+	sale = models.BooleanField('לעשות מבצע ?', default=False)
 	sale_price = models.FloatField('מחיר המבצע', validators=[MinValueValidator(5)])
 	Category = models.ManyToManyField(Categorie, 'קטגוריות', blank=True, default='uncategorized')
+	hot_product = models.BooleanField('להוסיף למוצרים חמים ?', default=False)
 
 
 	def __str__(self):
