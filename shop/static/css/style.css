@@ -159,6 +159,12 @@ nav {
 	height: 200px;
 	object-fit: cover;
 	border-radius: 3%;
+	transform: scale(1);
+	transition: 1s ease-out;
+}
+
+.product img:hover {
+	transform: scale(1.05);
 }
 
 .product-bottom {
