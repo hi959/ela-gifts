@@ -100,8 +100,24 @@
 								</div>
 
 								<div class="product-price">
-									<span class="product-currensy">&#8362;</span>
-									<span class="product-price-value">{{ i.price }}  </span>
+									{% if i.sale %}
+
+										<s>
+											<span class="product-currensy">&#8362;</span>
+											<span class="product-price-value"> {{ i.price }} </span>
+										</s>
+
+										<br>
+
+										<span class="product-currensy">&#8362;</span>
+										<span class="product-price-value"> {{ i.sale_price }} </span>
+
+									{% else %}
+
+										<span class="product-currensy">&#8362;</span>
+										<span class="product-price-value"> {{ i.price }} </span>
+
+									{% endif %}
 								</div>
 
 							</div>
@@ -118,6 +134,7 @@
 	</div>
 
 	<br><br><br><br>
+				
 
 
 <!--
