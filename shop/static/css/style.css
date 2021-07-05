@@ -15,6 +15,11 @@ body, html {
 	width: 100%;
 	height: 100%;
 	direction: rtl;
+
+}
+
+body {
+	background-color: #e3e3e3!important;	
 }
 
 .header-bg {
@@ -51,7 +56,6 @@ nav {
 .about-pc {
 	width: 100%;
 	height: 100vh;
-	background-color: #e3e3e3;
 	display: flex;
 	justify-content: center;
 	padding-top: 50px;
@@ -108,12 +112,69 @@ nav {
 	width: 40vw;
 }
 
-.product_img img {
-	display: block;
-    width: 290px;
-    margin: 0 auto 15px;
-    border-radius: 10px;
-    object-fit: cover;
+
+
+.shop {
+	width: 100%;
+	display: flex;
+}
+
+.fire-products {
+	width: 80%;
+	padding: 2%;
+	padding-top: 3%;
+	margin-right: auto;
+	margin-left: auto;
+	height: fit-content;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+.fire-products-title {
+	text-align: center;
+}
+
+.all-products {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product {
+	border: 2px solid #8d9eb5;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 1%;
+	background-color: #ebeced;
+}
+
+.product img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 3%;
+}
+
+.product-bottom {
+	direction: rtl;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	justify-content: center;
+	text-align: center;
+}
+
+.product-name {
+	font-size: 2vw;
+}
+
+.product-price {
+	font-size: 20px;
 }
 
 @media (max-width: 1702px) {
@@ -202,5 +263,62 @@ nav {
 
 	.about-article {
 		font-size: 4vw;
+	}
+}
+
+@media (max-width: 668px) {
+	.fire-products {
+		width: 95%;
+	}
+}
+
+@media (max-width: 558px) {
+	.product {
+		padding: 10px;
+	}
+}
+
+@media (max-width: 512px) {
+	.product-img {
+		width: 180px!important;
+	}
+}
+
+@media (max-width: 466px) {
+	.fire-products {
+		width: 100%;
+		border-radius: 0;
+		padding: 0;
+	}
+
+	.product {
+		margin: 0;
+		border: none;
+		background-color: none;
+	}
+}
+
+@media (max-width: 399px){
+	.product{
+		padding: 5px;
+	}
+}
+
+@media (max-width: 379px){
+	.product img{
+		width: 160px!important;
+		height: 170px;
+	}
+}
+
+@media (max-width: 339px){
+	.product img{
+		width: 155px!important;
+	}
+}
+
+@media (max-width: 329px){
+	.product img{
+		width: 150px!important;
 	}
 }

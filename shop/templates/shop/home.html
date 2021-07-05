@@ -77,27 +77,90 @@
 
 	</div>
 
-	{% for i in products_list %}
+
+	<div class="shop">
+
+
+			<div class="fire-products">
+				
+				<h3 class="fire-products-title">המוצרים החמים!!!</h3>
+
+				<div class="all-products">
+					{% for i in products_list %}
+
+					<div class="product">
+
+						<img src="{{ i.image.url }}" class="product-img">
+
+						<div class="product-bottom">
+
+							<div class="product-name">
+								<h3>{{ i.name }}</h3>
+							</div>
+
+
+							<div class="product-price">
+								<span class="product-currensy">&#8362;</span>
+								<span class="product-price-value">{{ i.price }}  </span>
+							</div>
+
+						</div>
+
+					</div>
+
+					{% endfor %}
+
+				</div>
+
+			</div>
+
+	</div>
+
+	<br><br><br><br>
+
+
+<!--
+		<br>
+		<div class="catalog">
+			{% for i in products_list %}
+				<div class="catalog__item bg-dark bg-gradient" dir="rtl">
+					<div class="product ">
+						<div>
+							<img src='{{ i.image.url }}' class="product__image">
+						</div>
+						<div class="product__content">
+							<h3 class="product__title">{{ i.name }}</h3>
+								<p class="product__description">{{ i.description }}</p>
+						</div>
+						<footer class="product__footer">
+							<div class="product__bottom">
+								<div class="product__price">
+									<span class="product__currency">&#8362;</span>
+									<span class="product__price-value">{{ i.price }}</span>
+								</div>
+								<button class="product__btn"><a href="">קרא עוד</a></button>
+							</div>
+						</footer>		
+						<br>
+						<br>
+						<br>
+					</div>
+				</div>
+			{%endfor%}
+		</div>			
+-->
 
 		<p>
-			{{ i.name }}
+			
 		</p>
 
 
 		{{ i.description }}
-		
-		<p>
-			{{ i.price }}
-		</p>
+
 
 		<p>
 			{{ i.count }}
 		</p>
-
-		<div class="product_img">
-			<img src="{{ i.image.url }}">
-		</div>
-	{% endfor %}
 
 {% endblock %}
 
