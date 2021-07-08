@@ -128,6 +128,7 @@ nav {
 	height: fit-content;
 	background-color: #fff;
 	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .fire-products-title {
@@ -182,6 +183,34 @@ nav {
 .product-price {
 	font-size: 20px;
 }
+
+
+
+
+.img_producto_container {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+.img_producto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s ease-out;
+}
+
+
+
+
+
+
 
 @media (max-width: 1702px) {
 	.search-width {
