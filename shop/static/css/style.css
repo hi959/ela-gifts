@@ -209,7 +209,10 @@ nav {
 
 
 
-
+.js-image-zoom__zoomed-image {
+	background-color: white!important;
+	background-size: 600px 600px!important;
+}
 
 
 @media (max-width: 1702px) {

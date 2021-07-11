@@ -5,6 +5,8 @@
 
 {% block body %}
 
+<script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+
 	{% include 'shop/navbar.html' %}
 	
 	<div class="header-bg">
@@ -137,6 +139,25 @@
 
 	<br><br><br><br>
 
+<div id="img-container" style="width: 490px; height: 490px">
+	{% load static %}
+	<img src="{% static 'product_images/arduino_uno.png' %}" alt="">
+</div>
+
+<script>
+
+	new ImageZoom(document.getElementById("img-container"), {
+    width: 490,
+    height: 490,
+    zoomWidth: 490,
+    scale: 0.3,
+    offset: {vertical: 0, horizontal: 10},
+    zoomStyle: "width: 490px; height: 490px;",
+    zoomPosition: "left",
+	});
+
+</script>
+
 <!--
 		<br>
 		<div class="catalog">
@@ -168,17 +189,7 @@
 		</div>			
 -->
 
-		<p>
-			
-		</p>
 
-
-		{{ i.description }}
-
-
-		<p>
-			{{ i.count }}
-		</p>
 
 {% endblock %}
 
