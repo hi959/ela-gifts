@@ -280,7 +280,7 @@ nav {
 
 @media (max-width: 1282px) {
 	.social-link {
-		font-size:17px!important;
+		font-size:17px;
 	}
 }
 
@@ -298,7 +298,7 @@ nav {
 
 @media (max-width: 1135px) {
 	.social-link{
-		width: 45%!important;
+		width: 45%;
 	}
 }
 
@@ -328,7 +328,7 @@ nav {
 	}
 
 	.social-link{
-		font-size: 35px!important;
+		font-size: 35px;
 	}
 
 	.fas, .fab {
@@ -354,13 +354,13 @@ nav {
 
 @media (max-width:817px) {
 	.social-link{
-		width: 50%!important;
+		width: 50%;
 	}
 }
 
 @media (max-width:715px) {
 	.social-link{
-		width: 60%!important;
+		width: 60%;
 	}
 }
 
@@ -373,6 +373,12 @@ nav {
 @media (max-width: 558px) {
 	.product {
 		padding: 10px;
+	}
+}
+
+@media (max-width:572px) {
+	.social-link{
+		width: 60%;
 	}
 }
 
