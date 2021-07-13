@@ -20,7 +20,7 @@ body {
 .header-bg {
 
   /* Full height */
-  	height: 50%; 
+  	height: 20vw; 
 
   	background-color: #f0f0f0;
 
@@ -37,6 +37,7 @@ body {
 
 .header-bg img {
 	box-shadow: 12px 0 35px -4px #d4d4d4, -12px 0 35px -3px #d4d4d4;
+	height: 100%;
 }
 
 nav {

@@ -92,7 +92,7 @@
 
 								<div class="product-price">
 									{% if i.sale %}
-
+									<div style="background-color: lightpink; border: 1px solid red;">
 										<s>
 											<span class="product-currensy">&#8362;</span>
 											<span class="product-price-value"> {{ i.price }} </span>
@@ -102,7 +102,7 @@
 
 										<span class="product-currensy">&#8362;</span>
 										<span class="product-price-value"> {{ i.sale_price }} </span>
-
+									</div>
 									{% else %}
 
 										<span class="product-currensy">&#8362;</span>
