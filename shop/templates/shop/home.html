@@ -92,7 +92,11 @@
 
 								<div class="product-price">
 									{% if i.sale %}
-									<div style="background-color: lightpink; border: 1px solid red;">
+									<div class="sale-sign">
+										<img src="{% static 'images/sale/unnamed.png' %}" class="sale-img">
+									</div>
+
+									<div>
 										<s>
 											<span class="product-currensy">&#8362;</span>
 											<span class="product-price-value"> {{ i.price }} </span>

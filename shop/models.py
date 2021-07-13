@@ -18,6 +18,7 @@ class Product(models.Model):
 	sale_price = models.FloatField('מחיר המבצע', validators=[MinValueValidator(5)])
 	Category = models.ManyToManyField(Categorie, 'קטגוריות', blank=True, default='uncategorized')
 	hot_product = models.BooleanField('להוסיף למוצרים חמים ?', default=False)
+	recomanded_product = models.BooleanField('להוסיף להמלצות שלי?', default=False)
 
 
 	def __str__(self):
