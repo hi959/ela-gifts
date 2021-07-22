@@ -207,7 +207,7 @@ nav {
 	object-fit: cover;
 	border-radius: 3%;
 	transform: scale(1);
-	transition: 0.5s ease-out;
+	transition: 0.5s ease-out transform;
 }
 
 .product-img:hover {
@@ -384,6 +384,9 @@ nav {
 	.social-link{
 		width: 60%;
 	}
+	.header-bg {
+		height: 43vw;
+	}
 }
 
 @media (max-width: 512px) {
@@ -446,10 +449,6 @@ nav {
 	.product-price {
     	font-size: 15px;
 	}
-
-	.header-bg {
-    	height: 60vw;
-    }
 }
 
 @media (max-width: 347px){
@@ -465,9 +464,16 @@ nav {
 
 }
 
-@media (max-width: 254px) {
+@media (max-width: 272px) {
 	.product-img {
 		width: 100px!important;
 		height: 100px!important;
+	}
+}
+
+@media (max-width: 251px) {
+	.product-img {
+		width: 90px!important;
+		height: 90px!important;
 	}
 }
