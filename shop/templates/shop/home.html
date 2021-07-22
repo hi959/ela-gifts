@@ -2,7 +2,6 @@
 
 
 
-
 {% block body %}
 
 <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
@@ -87,46 +86,47 @@
 				<div class="all-products">
 
 					{% for i in hot_products %}
+						<a href="{% url 'show-product' i.id %}" class="product-link">
 
-						<div class="product">
+							<div class="product" >
 
-							<img src="{{ i.image.url }}" class="product-img">
+								<img src="{{ i.image.url }}" class="product-img">
 
-							<div class="product-bottom">
+								<div class="product-bottom">
 
-								<div class="product-name">
-									<h3>{{ i.name }}</h3>
-								</div>
-
-								<div class="product-price">
-									{% if i.sale %}
-									<div class="sale-sign">
-										<img src="{% static 'images/sale/unnamed.png' %}" class="sale-img">
+									<div class="product-name">
+										<h3>{{ i.name }}</h3>
 									</div>
 
-									<div>
-										<s>
+									<div class="product-price">
+										{% if i.sale %}
+										<div class="sale-sign">
+											<img src="{% static 'images/sale/unnamed.png' %}" class="sale-img">
+										</div>
+
+										<div>
+											<s>
+												<span class="product-currensy">&#8362;</span>
+												<span class="product-price-value"> {{ i.price }} </span>
+											</s>
+
+											<br>
+
+											<span class="product-currensy">&#8362;</span>
+											<span class="product-price-value"> {{ i.sale_price }} </span>
+										</div>
+										{% else %}
+
 											<span class="product-currensy">&#8362;</span>
 											<span class="product-price-value"> {{ i.price }} </span>
-										</s>
 
-										<br>
-
-										<span class="product-currensy">&#8362;</span>
-										<span class="product-price-value"> {{ i.sale_price }} </span>
+										{% endif %}
 									</div>
-									{% else %}
 
-										<span class="product-currensy">&#8362;</span>
-										<span class="product-price-value"> {{ i.price }} </span>
-
-									{% endif %}
 								</div>
-
+								
 							</div>
-
-						</div>
-
+						</a>
 					{% endfor %}
 
 

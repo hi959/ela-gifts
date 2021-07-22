@@ -6,3 +6,8 @@ def home(request):
 	recomanded_products = Product.objects.filter(recomanded_product=True)
 	products_list = Product.objects.all()
 	return render(request, 'shop/home.html', {'hot_products': hot_products, 'recomanded_products': recomanded_products})
+
+
+def show_product(request, product_id):
+	product = Product.objects.get(pk=product_id)
+	return render(request, 'shop/product.html', {'product': product})

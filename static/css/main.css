@@ -41,7 +41,7 @@ body {
 }
 
 nav {
-	background-color: #8d9eb5;
+	background-color: #9cc9e6;
 	direction: rtl;
 }
 
@@ -228,6 +228,10 @@ nav {
 
 .product-price {
 	font-size: 20px;
+}
+
+.product-link {
+	text-decoration: none;
 }
 
 .js-image-zoom__zoomed-image {
@@ -438,6 +442,14 @@ nav {
 		width: 140px!important;
 		height: 140px!important;
 	}
+
+	.product-price {
+    	font-size: 15px;
+	}
+
+	.header-bg {
+    	height: 60vw;
+    }
 }
 
 @media (max-width: 347px){
@@ -449,5 +461,13 @@ nav {
 	.sale-sign {
 		width: 40px;
 		margin-right: -40px;
+	}
+
+}
+
+@media (max-width: 254px) {
+	.product-img {
+		width: 100px!important;
+		height: 100px!important;
 	}
 }
