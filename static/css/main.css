@@ -464,30 +464,9 @@ nav {
 
 }
 
-@media (max-width: 272px) {
+@media (max-width: 298px) {
 	.product-img {
 		width: 100px!important;
 		height: 100px!important;
-	}
-}
-
-@media (max-width: 251px) {
-	.product-img {
-		width: 90px!important;
-		height: 90px!important;
-	}
-}
-
-@media (max-width: 230px) {
-	.product-img {
-		width: 80px!important;
-		height: 80px!important;
-	}
-}
-
-@media (max-width: 210px) {
-	.product-img {
-		width: 70px!important;
-		height: 70px!important;
 	}
 }
