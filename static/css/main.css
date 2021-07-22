@@ -477,3 +477,17 @@ nav {
 		height: 90px!important;
 	}
 }
+
+@media (max-width: 230px) {
+	.product-img {
+		width: 80px!important;
+		height: 80px!important;
+	}
+}
+
+@media (max-width: 210px) {
+	.product-img {
+		width: 70px!important;
+		height: 70px!important;
+	}
+}
