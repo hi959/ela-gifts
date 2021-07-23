@@ -1,10 +1,61 @@
 {% extends 'shop/base.html' %}
 
+{% block head %}
+
+	{% load static %}
+	<link rel="stylesheet" href="{% static '/css/product.css' %}">
+	<link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+
+{% endblock %}
 
 {% block body %}
 
 
 	{% include 'shop/navbar.html' %}
+
+
+
+	<div class="container">
+
+		<div class="image_container">
+			<img src="{{ product.image.url }}" class="product_img">
+		</div>
+
+		<div class="product-info">
+			<h2 class="product-name">{{ product.name }}</h2>
+			<h6 class="product-id">product.id</h6>
+			<div class="product-price">
+				<h3 class="product-price"></h3>
+				{% if product.sale %}
+				
+					<div>
+						<s>
+							<span class="product-currensy">&#8362;</span>
+							<span class="product-price-value"> {{ product.price }} </span>
+						</s>
+
+						<br>
+
+						<span class="product-currensy">&#8362;</span>
+						<span class="product-price-value"> {{ product.sale_price }} </span>
+					</div>
+
+				{% else %}
+
+					<span class="product-currensy">&#8362;</span>
+					<span class="product-price-value"> {{ product.price }} </span>
+
+				{% endif %}
+
+			</div>
+			
+
+			<h4 class="count"></h4>
+
+		</div>
+
+	</div>
+
 
 
 {% endblock %}

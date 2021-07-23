@@ -1,0 +1,8 @@
+nav {
+	background-color: #9cc9e6;
+	direction: rtl;
+}
+
+.nav-item {
+	border-left: 1px solid black;
+}
