@@ -177,6 +177,7 @@ body {
 	flex-direction: column;
 	margin: 1%;
 	background-color: #ebeced;
+	position: relative;
 }
 
 .product img {

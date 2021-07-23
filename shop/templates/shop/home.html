@@ -97,6 +97,13 @@
 						<a href="{% url 'show-product' i.id %}" class="product-link">
 
 							<div class="product" >
+								{% if i.sale %}
+
+									<span style="width:fit-content; left: 23%; top: -15px;" class="position-relative translate-middle badge rounded-pill bg-danger">מבצע
+	 									
+	  								</span>
+
+  								{% endif %}
 
 								<img src="{{ i.image.url }}" class="product-img">
 
