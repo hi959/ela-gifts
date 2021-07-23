@@ -405,6 +405,7 @@ body {
 	}
 	.product-img {
 		width: 175px!important;
+		height: 175px!important;
 	}
 	
 }
@@ -420,9 +421,6 @@ body {
 	.product-bottom {
 		grid-template-rows: none;
 	}
-}
-
-@media (max-width: 414px){
 	.product-img{
 		width: 170px!important;
 	}
