@@ -403,6 +403,7 @@ body {
 		border: 1px solid #8d9eb5;
 		background-color: none;
 	}
+
 	.product-img {
 		width: 175px!important;
 		height: 175px!important;
@@ -413,15 +414,13 @@ body {
 @media (max-width: 416px){
 	.product{
 		border: none;
-		border-bottom: 1px solid #8d9eb5;
 		margin: 5px;
 	}
-	.all-products:nth-child(2n) .product {
-		border-left: 1px solid #8d9eb5;
-	}
+
 	.product-bottom {
 		grid-template-rows: none;
 	}
+	
 	.product-img{
 		width: 150px!important;
 		height: 150px!important;
