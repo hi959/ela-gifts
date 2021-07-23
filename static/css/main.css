@@ -414,7 +414,7 @@ body {
 	.product{
 		border: none;
 		border-bottom: 1px solid #8d9eb5;
-		padding: 1px;
+		padding: 5px;
 	}
 	.all-products:nth-child(2n) .product {
 		border-left: 1px solid #8d9eb5;
