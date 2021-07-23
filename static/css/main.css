@@ -179,19 +179,6 @@ body {
 	background-color: #ebeced;
 }
 
-.sale-sign {
-	z-index: 200;
-    position: absolute;
-    width: 50px;
-    margin-bottom: -260px;
-    margin-right: -65px;
-}
-
-.sale-sign img {
-	width: 100%!important;
-	height: auto!important;
-}
-
 .product img {
 	width: 200px;
 	height: 200px;
@@ -413,14 +400,13 @@ body {
 
 @media (max-width: 416px){
 	.product{
-		border: none;
 		margin: 5px;
 	}
 
 	.product-bottom {
 		grid-template-rows: none;
 	}
-	
+
 	.product-img{
 		width: 150px!important;
 		height: 150px!important;
@@ -441,17 +427,16 @@ body {
 	.product-price {
     	font-size: 15px;
 	}
+
+	.product-name h3 {
+		font-size: 15px;
+	}
 }
 
 @media (max-width: 347px){
 	.product-img {
 		width: 110px!important;
 		height: 110px!important;
-	}
-
-	.sale-sign {
-		width: 40px;
-		margin-right: -40px;
 	}
 
 }
