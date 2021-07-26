@@ -84,6 +84,21 @@
 
 	</div>
 
+	<div class="categories">
+		<ul class="categories-list">
+			{% for category in categories %}
+				<a href="">
+					<li class="category">
+						<p>
+							{{ category.name }}
+						</p>
+					</li>
+				</a>
+
+			{% endfor %}
+		</ul>
+	</div>
+
 	<div class="shop">
 
 

@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.product-info-container {
+	width: 80%;
+	margin: 100px auto 0 auto;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.product-info {
+	width: 50%;
+	transform: translateX(-50px);
+}
+
+.product-currensy:nth-child(2) {
+	margin-right: 20px;
+}
+
