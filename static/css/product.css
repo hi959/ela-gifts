@@ -20,3 +20,27 @@ body {
 	margin-right: 20px;
 }
 
+.categories {
+	margin: 0 auto 0 auto;
+	padding: 0;
+	width: 60%;
+}
+
+.categories-list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 30px;
+	padding: 0;
+}
+
+.categories-list a {
+	text-decoration: none;
+	background-color: whitesmoke;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.category {
+	height: 100px;
+	text-align: center;
+}

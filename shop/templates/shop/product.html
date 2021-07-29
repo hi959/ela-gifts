@@ -46,13 +46,25 @@
 
 			</div>
 
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+			<div class="product-desc">
+				<p>{{ product.description }}</p>
+			</div>
+			
+			<div>
+				<ul class="categories-list">
+					{% for cat in product.category.all %}
+						<a href="">
+							<li class="category">
+								<p>
+									{{ cat }}
+								</p>
+							</li>
+						</a>
+
+					{% endfor %}
+				</ul>
+			</div>
+
 			<br>
 			<br>
 			<br>

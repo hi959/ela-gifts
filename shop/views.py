@@ -12,3 +12,8 @@ def home(request):
 def show_product(request, product_id):
 	product = Product.objects.get(pk=product_id)
 	return render(request, 'shop/product.html', {'product': product})
+
+
+def category(request, category_id):
+	products = Product.objects.filter(category=category_id)
+	return render(request, 'shop/category.html', {'products': products})
