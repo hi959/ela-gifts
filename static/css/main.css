@@ -193,7 +193,6 @@ body {
 .fire-products {
 	width: 80%;
 	padding: 2%;
-	padding-top: 3%;
 	margin-right: auto;
 	margin-left: auto;
 	height: fit-content;
@@ -204,6 +203,12 @@ body {
 
 .fire-products-title {
 	text-align: center;
+	width: 30%;
+	margin: 0 auto 0 auto;
+	padding: 1%;
+	border: 3px dotted;
+	margin-bottom: 1%;
+	border-radius: 20px;
 }
 
 .all-products {
