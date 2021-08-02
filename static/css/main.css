@@ -17,6 +17,25 @@ body {
 	background-color: #e3e3e3!important;	
 }
 
+.carousel {
+	margin-top: 58px;
+	background-color: whitesmoke;
+}
+
+.carousel-inner {
+	height: 50vh;
+}
+
+.carousel-item {
+	height: 100%!important;
+	background-color: whitesmoke;
+}
+
+.carousel-img {
+	height: 100%;
+	margin: 0 auto 0 auto!important;
+}
+
 .header-bg {
 
   /* Full height */
@@ -435,6 +454,17 @@ body {
 @media (max-width: 512px) {
 	.product-img {
 		width: 180px!important;
+	}
+}
+
+@media (max-width: 500px) {
+	.carousel-img {
+		width: 100%!important;
+		height: auto;
+	}
+
+	.carousel-inner {
+		height: auto;
 	}
 }
 

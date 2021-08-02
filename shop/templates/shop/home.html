@@ -16,12 +16,31 @@
 
 	{% include 'shop/navbar.html' %}
 	
-	<div class="header-bg">
-		
-		{% load static %}
-		<img src="{% static 'images/header/header-image.png' %}"/>
-
+	{% load static %}
+	<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="{% static 'images/product_images/Screenshot_2020-11-12_210427.png' %}" class="d-block h-100 carousel-img" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="{% static 'images/header/header-image.png' %}" class="d-block h-100 carousel-img" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="{% static 'images/header/header-image.png' %}" class="d-block h-100 carousel-img" alt="...">
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
 	</div>
+
+
+	
 
     <ul class="side-follow">
 		<li class="side-follow-instagram">
