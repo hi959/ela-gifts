@@ -1,13 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	{% for product in products %}
-		{{ product.name }}
-	{% endfor %}	
-</body>
-</html>
+{% extends 'shop/base.html' %}
+
+
+{% block head %}
+
+	{% load static %}
+	<link rel="stylesheet" href="{% static '/css/main.css' %}">
+	<link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+
+{% endblock %}
+
+
+{% block body %}
+
+	{% include 'shop/navbar.html' %}
+	
+	<div class="shop">
+
+		<div class="fire-products">
+					
+			<h3 class="fire-products-title border-primary">{{ category.name }}</h3>
+
+			<div class="all-products">
+
+				{% for product in products %}
+					<a href="{% url 'show-product' product.id %}" class="product-link">
+
+						<div class="product" >
+							{% if product.sale %}
+
+								<span style="width:fit-content; left: 23%; top: -15px;" class="position-relative translate-middle badge rounded-pill bg-primary">מבצע
+		 									
+		  						</span>
+
+	  						{% endif %}
+
+							<img src="{{ product.image.url }}" class="product-img">
+
+							<div class="product-bottom">
+
+								<div class="product-name">
+									<h3>{{ product.name }}</h3>
+								</div>
+
+								<div class="product-price">
+									{% if product.sale %}
+
+									<div>
+										<s>
+											<span class="product-currensy">&#8362;</span>
+											<span class="product-price-value"> {{ product.price }} </span>
+										</s>
+
+										<br>
+
+										<span class="product-currensy">&#8362;</span>
+										<span class="product-price-value"> {{ product.sale_price }} </span>
+									</div>
+									{% else %}
+
+										<span class="product-currensy">&#8362;</span>
+										<span class="product-price-value"> {{ product.price }} </span>
+
+									{% endif %}
+								</div>
+
+							</div>
+									
+						</div>
+					</a>
+				{% endfor %}
+
+
+			</div>
+
+		</div>
+
+	</div>
+{% endblock %}

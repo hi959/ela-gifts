@@ -16,4 +16,5 @@ def show_product(request, product_id):
 
 def category(request, category_id):
 	products = Product.objects.filter(category=category_id)
-	return render(request, 'shop/category.html', {'products': products})
+	category_name = Categorie.objects.get(pk=category_id)
+	return render(request, 'shop/category.html', {'products': products, 'category':category_name})

@@ -24,23 +24,26 @@
 		<div class="product-info">
 			<h1 class="product-name">{{ product.name }}</h1>
 			<div class="product-price">
-				<h3>מחיר:</h3>
 				{% if product.sale %}
 				
 					<div>
 						<s>
 							<span class="product-currensy">&#8362;</span>
-							<span class="product-price-value"> {{ product.price }} </span>
+							<span class="product-price-value"> {{ product.price }}  </span>
 						</s>
 
-						<span class="product-currensy">&#8362;</span>
-						<span class="product-price-value"> {{ product.sale_price }} </span>
+						<strong>
+							<span class="product-currensy">&nbsp;&nbsp;&nbsp; &#8362;</span>
+							<span class="product-price-value"> {{ product.sale_price }} </span>
+						</strong>
 					</div>
 
 				{% else %}
 
-					<span class="product-currensy">&#8362;</span>
-					<span class="product-price-value"> {{ product.price }} </span>
+					<strong>
+						<span class="product-currensy">&#8362;</span>
+						<span class="product-price-value"> {{ product.price }} </span>
+					</strong>
 
 				{% endif %}
 
@@ -49,21 +52,8 @@
 			<div class="product-desc">
 				<p>{{ product.description }}</p>
 			</div>
-			
-			<div>
-				<ul class="categories-list">
-					{% for cat in product.category.all %}
-						<a href="">
-							<li class="category">
-								<p>
-									{{ cat }}
-								</p>
-							</li>
-						</a>
 
-					{% endfor %}
-				</ul>
-			</div>
+
 
 			<br>
 			<br>
@@ -75,6 +65,25 @@
 
 		</div>
 
+	</div>
+
+
+	<div>
+		<ul class="categories-list">
+
+			{% for cat in product.category.all %}
+
+				<a href="">
+					<li class="category">
+						<p>
+							{{ cat }}
+						</p>
+					</li>
+				</a>
+
+			{% endfor %}
+
+		</ul>
 	</div>
 
 
