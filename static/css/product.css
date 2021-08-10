@@ -20,6 +20,10 @@ body {
 	margin-right: 20px;
 }
 
+.product-link {
+	max-width: 244px;
+}
+
 .product-name {
 	text-align: center;
 	border-bottom: 1px solid blue;
