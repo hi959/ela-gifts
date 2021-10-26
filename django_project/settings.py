@@ -30,7 +30,7 @@ SECRET_KEY = "asdg"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.ela.gifts', '139.162.172.111', 'ela.gifts', 'localhost', '127.0.0.1', 'elagifts.herokuapp.com/']
+ALLOWED_HOSTS = ['www.ela.gifts', '139.162.172.111', 'ela.gifts', 'localhost', '127.0.0.1', 'elagifts.herokuapp.com']
 
 
 # Application definition
