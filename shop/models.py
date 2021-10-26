@@ -14,13 +14,13 @@ class Product(models.Model):
 	name = models.CharField('שם המוצר', max_length=100)
 	price = models.FloatField('מחיר המוצר', validators=[MinValueValidator(5)])
 	description = models.TextField("תיאור המוצר", blank=True)
-	image = models.ImageField('תמונת המוצר', upload_to="product_images/")
-	count = models.PositiveIntegerField('כמות המוצר')
+	image = models.ImageField('תמונת המוצר', upload_to="product_images")
+	subimage1 = models.ImageField('תמונה נוספת 1', blank=True, upload_to="product_sub_images")
+	subimage2 = models.ImageField('תמונה נוספת 2', blank=True, upload_to="product_sub_images")
 	sale = models.BooleanField('לעשות מבצע ?', default=False)
 	sale_price = models.FloatField('מחיר המבצע', validators=[MinValueValidator(5)])
 	category = models.ManyToManyField(Categorie, 'קטגוריות', blank=True, default='uncategorized')
 	hot_product = models.BooleanField('להוסיף למוצרים חמים ?', default=False)
-	recomanded_product = models.BooleanField('להוסיף להמלצות שלי?', default=False)
 
 
 	def __str__(self):

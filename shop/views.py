@@ -6,10 +6,9 @@ from .models import Product, Categorie, HeaderImages
 def home(request):
 	header_images = HeaderImages.objects.all()
 	hot_products = Product.objects.filter(hot_product=True)
-	recomanded_products = Product.objects.filter(recomanded_product=True)
 	products_list = Product.objects.all()
 	categories = Categorie.objects.all()
-	return render(request, 'shop/home.html', {'hot_products': hot_products, 'recomanded_products': recomanded_products, 'categories': categories, 'header_images':header_images })
+	return render(request, 'shop/home.html', {'hot_products': hot_products, 'categories': categories, 'header_images':header_images })
 
 
 def show_product(request, product_id):
@@ -41,3 +40,12 @@ def search(request):
 			{'searched':searched, 'categories':categories, 'products':products})
 	else:
 		return render(request, 'shop/home.html')
+
+
+def subimage(request, product_id, subimagenum):
+	product = Product.objects.get(pk=product_id)
+	if subimagenum == "1":
+		subimage = product.subimage1.url
+	else:
+		subimage = product.subimage2.url
+	return render(request, 'shop/subimage.html', {'subimage': subimage})

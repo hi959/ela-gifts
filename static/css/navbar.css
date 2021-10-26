@@ -1,5 +1,5 @@
 nav {
-	background-color: #9cc9e6;
+	background-color: #e6d9b5;
 	direction: rtl;
 }
 
@@ -24,13 +24,13 @@ nav {
 }
 
 .navbar-top {
-	background-color: #4494c9;
+	background-color: #cfb778;
 	top: 0!important;
 	height: 55px;
 }
 
 .side-follow {
-	border-radius: 4px;
+    border-radius: 4px;
     overflow: hidden;
     list-style: none;
     display: flex;
@@ -52,6 +52,10 @@ nav {
     height: 100%;
     transition: all .2s;
     align-items: center;
+}
+
+.side-follow li a i {
+    color: black;
 }
 
 .side-follow-facebook {

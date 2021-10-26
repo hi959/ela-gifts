@@ -17,8 +17,21 @@
 
 	<div class="product-info-container">
 
+
 		<div class="image-container">
+
+		<div class="sub-images">
+				{% if product.subimage1 %}
+						<a class="subimage-link" href="{% url 'subimage' 1 product.id %}"><img class="sub-image" src="{{ product.subimage1.url }}"></img></a>
+				{% endif %}
+
+				{% if product.subimage2 %}
+						<a class="subimage-link" href="{% url 'subimage' 2 product.id %}"><img class="sub-image" src="{{ product.subimage2.url }}"></img></a>
+				{% endif %}
+			</div>
+
 			<img src="{{ product.image.url }}" class="product_img">
+
 		</div>
 
 		<div class="product-info">
@@ -58,7 +71,7 @@
 
 			<br><br>
 
-			<h3>למזמנה:</h3>
+			<h3>להזמנה:</h3>
 
 			<div class="buttons">
 				<a href="https://wa.me/+972506626266?text=היי סבטה, אני רוצה להזמין {{ product.name }}" class="contact">
@@ -76,8 +89,6 @@
 			</div>
 
 			<br>
-			
-			<p class="count">כמות המוצר:      {{ product.count }}</p>
 
 			<p class="product-id">קוד זיהוי:    {{ product.id }}</p>
 
