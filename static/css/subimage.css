@@ -11,9 +11,8 @@ body {
 }
 
 img {
-	width: 90vw;
-	max-height: 90vh;
 	display: block;
 	margin: auto;
 	background-size: cover;
+	object-fit: contain;
 }
